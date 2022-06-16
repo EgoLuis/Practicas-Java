@@ -1,0 +1,21 @@
+package arraylist;
+import java.io.*;
+
+public class UsoArrayList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList archivos = new ArrayList(4);
+		
+		archivos.add("Juan");
+		archivos.add("María");
+		archivos.add("Ana");
+		archivos.add("Sandra");
+		String nombrePersona = (String)archivos.get(2);
+		
+		System.out.println(nombrePersona);
+
+	}
+
+}

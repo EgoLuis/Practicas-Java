@@ -1,0 +1,22 @@
+package clases_propias;
+
+public class UsoPareja {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Pareja<String> una = new Pareja<String>();
+		una.setPrimero("Luis");
+		System.out.println(una.getPrimero());
+		
+	}
+}
+
+ class Persona{
+	 
+	 public Persona(String nombre) {
+		 this.nombre=nombre;
+	 }
+	 
+	 private String nombre;
+ }

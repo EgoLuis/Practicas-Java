@@ -1,0 +1,19 @@
+package clases_propias;
+
+public class MetodosGenericos {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+class MisMatrices{
+	
+	public static <T> String getElementos(T[]a) {
+	
+		return "El arrat tiene " + a.length + " elementos.";
+		
+	}
+}

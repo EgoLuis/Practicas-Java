@@ -1,0 +1,27 @@
+package arraylist;
+import java.io.*;
+
+public class UsoArrayList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList archivos = new ArrayList(4);
+		/*
+		archivos.add("Juan");
+		archivos.add("María");
+		archivos.add("Ana");
+		archivos.add("Sandra");
+		String nombrePersona = (String)archivos.get(2);
+		*/
+		
+		archivos.add(new File("gestion_Pedidos.accdb"));
+		
+		File nombrePersona= (File)archivos.get(0);
+		
+		
+		System.out.println(nombrePersona);
+
+	}
+
+}
