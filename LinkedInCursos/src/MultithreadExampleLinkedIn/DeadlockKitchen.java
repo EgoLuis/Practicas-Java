@@ -1,0 +1,39 @@
+package MultithreadExampleLinkedIn;
+
+public class DeadlockKitchen {
+	
+	public static Object spoon = new Object();
+	public static Object bowl = new Object();
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Thread cook1 = new Thread(() -> {
+			synchronized (spoon) {
+				System.out.println("Cook1: Holding the spoon...");
+				System.out.println("Cook1: Waiting for the bowl...");
+				synchronized (bowl) {
+					System.out.println("Cook1: Holding the spoon and the bowl.");
+				}
+			}
+		});
+		
+		
+		Thread cook2 = new Thread(() -> {
+			synchronized (bowl) {
+				System.out.println("Cook2: Holding the bowl...");
+				System.out.println("Cook2: Waiting for the spoon...");
+				synchronized (spoon) {
+					System.out.println("Cook2: Holding the spoon and the bowl.");
+				}
+			}
+		});
+		
+		cook1.start();
+		cook2.start();
+
+		//El programa correra para siempre ya que el hilo 1 necesita un objeto para terminar que esta utilizando el hilo 2 y viceversa
+		
+	}
+
+}

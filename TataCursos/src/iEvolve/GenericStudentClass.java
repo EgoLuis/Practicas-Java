@@ -2,8 +2,6 @@ package iEvolve;
 
 public class GenericStudentClass{
 	
-	
-	
 		public String getQuery(String studentData,String query){
         
 		String[] queryList = query.split(",");
