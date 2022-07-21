@@ -51,7 +51,7 @@ public class Cliente {
 				try {
 					System.out.println("antes del socket");
 					//"177.249.171.139"
-					Socket misocket = new Socket("127.0.0.1", 5000);
+					Socket misocket = new Socket("177.249.171.139", 5000);
 					System.out.println("antes del flujo");
 					DataOutputStream flujo_salida = new DataOutputStream(misocket.getOutputStream());
 					System.out.println("antes de escribir");
