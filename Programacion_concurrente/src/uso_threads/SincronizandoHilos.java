@@ -24,7 +24,8 @@ public class SincronizandoHilos {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}*/
+		}
+		*/
 		
 		HilosVarios hilo1 = new HilosVarios();
 		HilosVarios2 hilo2 = new HilosVarios2(hilo1);
