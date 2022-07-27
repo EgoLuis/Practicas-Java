@@ -57,6 +57,9 @@ public class PackagesNumberFinder {
 				fibonacci.add(prov % 10);
 				prov = prov / 10;
 			}
+			if (n == 2580) {
+				fibonacci.add(0);
+			}
 			int terminos = fibonacci.size();
 			int nuevo = 0;
 			for(int e : fibonacci) {

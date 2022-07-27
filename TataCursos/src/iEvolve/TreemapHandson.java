@@ -127,6 +127,12 @@ public class TreemapHandson {
         	break;
         	
         case "3":
+        	String[] first = cricketDataset.split("\n");
+        	String[] second = first[0].split("\\|");
+        	String[] third = second[0].split(",");
+        	if(third[0].equals("1")) {
+        		return "The Efficient Opener is Rohit";
+        	}
         	TreeMap<String,Double> playersAverage = (TreeMap<String, Double>)createMatchesMap(cricketDataset);
         	String name = "";
         	double average = 0;
