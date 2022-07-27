@@ -7,8 +7,8 @@ import java.io.FileWriter;
 import java.io.Reader;
 import java.sql.Connection;
 
-import org.apache.ibatis.jdbc.ScriptRunner;
-
+//import org.apache.ibatis.jdbc.ScriptRunner;
+/*
 public class JDBC_RunningScripts {
 
 	public void runDbScript() throws Exception {
@@ -51,6 +51,8 @@ public class JDBC_RunningScripts {
 	   }
 	
 }
+*/
+
 
 /*
 CREATE TABLE IF NOT EXISTS category (

@@ -3,7 +3,7 @@ package iEvolve;
 import java.sql.*;
 import java.sql.Date;
 import java.util.*;
-
+/*
 public class JDBC_Exercise {
 	
 	public boolean insertCategory(String type) throws SQLException {
@@ -140,3 +140,4 @@ public class JDBC_Exercise {
 		return rs;
 	}
 }
+*/

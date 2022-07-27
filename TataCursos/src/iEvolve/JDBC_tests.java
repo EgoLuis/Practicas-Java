@@ -1,7 +1,7 @@
 package iEvolve;
 
 import java.sql.Date;
-
+/*
 public class JDBC_tests {
 	public class JdbcTest {
 		DbOperations dbOp = new DbOperations();
@@ -103,3 +103,4 @@ public class JDBC_tests {
 	}
 
 }
+*/
