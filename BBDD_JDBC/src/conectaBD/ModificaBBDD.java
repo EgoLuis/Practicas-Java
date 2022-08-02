@@ -23,7 +23,7 @@ try {
 			String sqlInserta = "INSERT INTO productos (CODIGOARTICULO, NOMBREARTCULO, PRECIO) "
 								+ "VALUES ('AR07', 'PANTALON', 25.35)"; 
 			
-			String sqlActualiza = "UPDATE productos SET PRECIO = PRECIO *2 WHERE CODIGOARTICULO = 'AR07'";
+			String sqlActualiza = "UPDATE productos SET PRECIO = PRECIO*2 WHERE CODIGOARTICULO = 'AR07'";
 			
 			String sqlBorrar = "DELETE FROM productos WHERE CODIGOARTICULO = 'AR07'";
 			
@@ -32,9 +32,6 @@ try {
 			miStatement.executeUpdate(sqlInserta);
 			miStatement.executeUpdate(sqlActualiza);
 			miStatement.executeUpdate(sqlBorrar);
-			
-			
-		
 			
 			miConexion.close();
 			

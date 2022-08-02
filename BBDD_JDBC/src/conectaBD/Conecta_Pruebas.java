@@ -31,6 +31,7 @@ public class Conecta_Pruebas {
 									);
 			}
 			
+			miResultSet.close();
 			miConexion.close();
 			
 		} catch (Exception e) {
