@@ -6,7 +6,7 @@ import java.math.BigInteger;
 import java.util.function.*;
 import java.util.stream.*;
 
-public class PrimeComosite_FactorialMain {
+public class PrimeComposite_FactorialMain {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
