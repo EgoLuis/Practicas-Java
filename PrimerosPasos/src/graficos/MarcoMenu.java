@@ -43,9 +43,9 @@ class MenuLamina extends JPanel {
 		archivo.add(new JMenuItem("Guardar Como"));
 		archivo.addSeparator();
 		archivo.add(subOpciones);
-		edicion.add(new JMenuItem("Cortar"));
-		edicion.add(new JMenuItem("Copiar"));
-		edicion.add(new JMenuItem("Pegar"));
+		edicion.add(new JMenuItem("Cortar", new ImageIcon("bin/graficos/bola_amarilla.gif")));
+		edicion.add(new JMenuItem("Copiar", new ImageIcon("bin/graficos/bola_amarilla.gif")));
+		edicion.add(new JMenuItem("Pegar", new ImageIcon("bin/graficos/bola_amarilla.gif")));
 		herramientas.add(new JMenuItem("Generales"));
 				
 		mibarra.add(archivo);
