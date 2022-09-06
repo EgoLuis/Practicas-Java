@@ -6,7 +6,6 @@
     <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
     <fullyQualifiedTypeName name="javax.swing.text.Document"/>
     <fullyQualifiedTypeName name="javax.swing.event.DocumentListener"/>
-    <fullyQualifiedTypeName name="java.sql.Connection"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
     <fullyQualifiedTypeName name="java.awt.event.WindowListener"/>
     <fullyQualifiedTypeName name="java.sql.ResultSet"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="javax.swing.KeyStroke"/>
     <fullyQualifiedTypeName name="java.awt.event.KeyEvent"/>
     <fullyQualifiedTypeName name="java.awt.event.InputEvent"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
 </qualifiedTypeNameHistroy>
