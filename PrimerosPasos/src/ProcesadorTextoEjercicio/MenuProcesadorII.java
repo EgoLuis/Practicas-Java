@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 public class MenuProcesadorII extends JFrame {
 	
 	public MenuProcesadorII() {
-		setBounds(500,300,550,400);
+		setBounds(500,300,550,450);
 		LaminaProcesadorIII milamina = new LaminaProcesadorIII();
 		add(milamina);
 		setVisible(true);

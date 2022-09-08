@@ -1,6 +1,7 @@
 package ProcesadorTextoEjercicio;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
@@ -13,6 +14,8 @@ public class LaminaProcesadorIII extends JPanel {
 	JTextPane miarea;
 	JMenu fuente, estilo, tamagno;
 	Font letras;
+	JButton negritaBarra, cursivaBarra, subrayadoBarra, azulBarra, rojoBarra, amarilloBarra, a_izqBarra, a_cenBarra, a_jusBarra;
+	JToolBar barra;
 	
 	public LaminaProcesadorIII() {
 		
@@ -84,7 +87,27 @@ public class LaminaProcesadorIII extends JPanel {
 		emergente.add(cursivaE);
 		miarea.setComponentPopupMenu(emergente);
 		
+		barra = new JToolBar();
+		
+		configuraBarra("N", false).addActionListener(new StyledEditorKit.BoldAction());
+		configuraBarra("K", false).addActionListener(new StyledEditorKit.ItalicAction());
+		configuraBarra("S", false).addActionListener(new StyledEditorKit.UnderlineAction());
+		barra.addSeparator();
+		configuraBarra("src/graficos/bola_azul.gif", true).addActionListener(new StyledEditorKit.ForegroundAction("Pone_azul", Color.BLUE));
+		configuraBarra("src/graficos/bola_amarilla.gif", true).addActionListener(new StyledEditorKit.ForegroundAction("Pone_azul", Color.YELLOW));
+		configuraBarra("src/graficos/bola_roja.gif", true).addActionListener(new StyledEditorKit.ForegroundAction("Pone_azul", Color.RED));
+		barra.addSeparator();
+		configuraBarra("IZQ", false).addActionListener(new StyledEditorKit.AlignmentAction("Alinea_Izquierda", 0));
+		configuraBarra("CEN", false).addActionListener(new StyledEditorKit.AlignmentAction("Alinea_Centro", 1));
+		configuraBarra("DER", false).addActionListener(new StyledEditorKit.AlignmentAction("Alinea_Derecha", 2));
+		configuraBarra("JUS", false).addActionListener(new StyledEditorKit.AlignmentAction("Alinea_Justifica", 3));
+		
+		barra.setOrientation(1);
+		add(barra, BorderLayout.WEST);
+		
+		
 	}
+	
 	
 	public void configuraMenu(String rotulo, String menu, String tipoLetra, int estilos, int tam, String ruta_icono) {
 		
@@ -102,7 +125,22 @@ public class LaminaProcesadorIII extends JPanel {
 			tamagno.add(elem_menu);
 			elem_menu.addActionListener(new StyledEditorKit.FontSizeAction("cambiaTamaño", tam));
 		}
-
+	}
+	
+	
+	public JButton configuraBarra(String ruta, boolean imagen) {
+		
+		JButton boton;
+		
+		if(imagen) {
+			boton = new JButton(new ImageIcon(ruta));
+		} else {
+			boton = new JButton(ruta);
+		}
+		
+		barra.add(boton);
+		
+		return boton;
 	}
 	
 		
